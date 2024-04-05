@@ -12,6 +12,8 @@
 		56CC24F32BC07F2700AFA582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CC24F22BC07F2700AFA582 /* Assets.xcassets */; };
 		56CC24F62BC07F2700AFA582 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CC24F52BC07F2700AFA582 /* Preview Assets.xcassets */; };
 		56CC25002BC083DE00AFA582 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC24FF2BC083DE00AFA582 /* MenuBarView.swift */; };
+		56CC25022BC0ABFC00AFA582 /* NoiseControlModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC25012BC0ABFC00AFA582 /* NoiseControlModifier.swift */; };
+		56CC25042BC0AC4100AFA582 /* NoiseControlContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC25032BC0AC4100AFA582 /* NoiseControlContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		56CC24F52BC07F2700AFA582 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		56CC24F72BC07F2700AFA582 /* harmony.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = harmony.entitlements; sourceTree = "<group>"; };
 		56CC24FF2BC083DE00AFA582 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		56CC25012BC0ABFC00AFA582 /* NoiseControlModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseControlModifier.swift; sourceTree = "<group>"; };
+		56CC25032BC0AC4100AFA582 /* NoiseControlContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseControlContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				56CC24F22BC07F2700AFA582 /* Assets.xcassets */,
 				56CC24F72BC07F2700AFA582 /* harmony.entitlements */,
 				56CC24F42BC07F2700AFA582 /* Preview Content */,
+				56CC25012BC0ABFC00AFA582 /* NoiseControlModifier.swift */,
+				56CC25032BC0AC4100AFA582 /* NoiseControlContainer.swift */,
 			);
 			path = harmony;
 			sourceTree = "<group>";
@@ -142,9 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56CC25042BC0AC4100AFA582 /* NoiseControlContainer.swift in Sources */,
 				56CC25002BC083DE00AFA582 /* MenuBarView.swift in Sources */,
 				56CC24F12BC07F2600AFA582 /* ContentView.swift in Sources */,
 				56CC24EF2BC07F2600AFA582 /* harmonyApp.swift in Sources */,
+				56CC25022BC0ABFC00AFA582 /* NoiseControlModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
