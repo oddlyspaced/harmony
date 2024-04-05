@@ -18,15 +18,7 @@ struct harmonyApp: App {
         }
         // menu bar controls
         MenuBarExtra("test", systemImage: "\(currentNumber).circle") {
-            Button("One") {
-                currentNumber = "1"
-            }
-            Button("Two") {
-                currentNumber = "2"
-            }
-            Button("Three") {
-                currentNumber = "3"
-            }
+            MenuBarView(currentNumber: currentNumber)
         }
     }
 }
