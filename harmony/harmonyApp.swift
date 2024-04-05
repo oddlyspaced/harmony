@@ -13,12 +13,17 @@ struct harmonyApp: App {
     @State var currentNumber: String = "1"
     
     var body: some Scene {
-//        WindowGroup {
-//            ContentView()
-//        }
+        //        WindowGroup {
+        //            ContentView()
+        //        }
         // menu bar controls
         MenuBarExtra("test", systemImage: "\(currentNumber).circle") {
-            MenuBarView(currentNumber: currentNumber)
+            MenuBarView(currentNumber: currentNumber, setCurrentNumber: self.setCurrentNumber)
         }
     }
+    
+    func setCurrentNumber(number: String) {
+        currentNumber = number
+    }
 }
+

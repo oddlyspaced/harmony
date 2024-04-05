@@ -10,25 +10,24 @@ import SwiftUI
 
 struct MenuBarView: View {
     var currentNumber: String
-    init(currentNumber: String) {
-        self.currentNumber = currentNumber
-    }
+    var setCurrentNumber: (_ number: String) -> Void;
     
     var body: some View {
         Text("Devices")
         
         Button("One") {
-//            currentNumber = "1"
+            setCurrentNumber("1")
         }
         Button("Two") {
-//            currentNumber = "2"
+            setCurrentNumber("2")
         }
         Button("Three") {
-//            currentNumber = "3"
+            setCurrentNumber("3")
         }
     }
 }
 
 #Preview {
-    MenuBarView(currentNumber: "1")
+    MenuBarView(currentNumber: "1") { number in
+    }
 }
