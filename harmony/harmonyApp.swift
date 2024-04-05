@@ -19,7 +19,7 @@ struct harmonyApp: App {
         // menu bar controls
         MenuBarExtra("test", systemImage: "\(currentNumber).circle") {
             MenuBarView(currentNumber: currentNumber, setCurrentNumber: self.setCurrentNumber)
-        }
+        }.menuBarExtraStyle(.window)
     }
     
     func setCurrentNumber(number: String) {
