@@ -7,6 +7,21 @@
 
 import SwiftUI
 
+struct NoiseControlModifier: View {
+    var ticked: Bool
+    var title: String
+    
+    var body: some View {
+        HStack(content: {
+            if (ticked) {
+                Image(systemName: "checkmark").padding(.leading, 10)
+            }
+            Image(systemName: "person.fill").padding(.leading, ticked ? 8 : 40g)
+            Text(title).padding(.leading, 2)
+        })
+    }
+}
+
 
 struct MenuBarView: View {
     var currentNumber: String
@@ -14,13 +29,11 @@ struct MenuBarView: View {
     
     var body: some View {
         VStack(alignment: .leading, content: {
-            Text("Devices").foregroundStyle(Color(red: 0.13333333333333333, green: 0.12549019607843137, blue: 0.1411764705882353)).fontWeight(.bold)
-            Divider()
             HStack {
                 Image(systemName: "headphones")
-                    .font(.system(size:16))
+                    .font(.system(size: 16))
                     .foregroundColor(.white)
-                    .padding(8)
+                    .padding(6)
                     .background(Color.blue)
                     .clipShape(Circle())
                 VStack(alignment: .leading, spacing: 2, content: {
@@ -34,6 +47,12 @@ struct MenuBarView: View {
                 })
                 
             }.padding(.top, 4)
+            VStack(alignment: HorizontalAlignment.leading, spacing: 12, content: {
+                NoiseControlModifier(ticked: true, title: "Noise Cancellation")
+                NoiseControlModifier(ticked: false, title: "Off")
+                NoiseControlModifier(ticked: false, title: "Transparency")
+            }).padding(.top, 8)
+            
         })
         .padding(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
         .frame(
