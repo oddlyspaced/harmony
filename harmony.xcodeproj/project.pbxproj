@@ -55,11 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				56CC24EE2BC07F2600AFA582 /* harmonyApp.swift */,
+				56CC24FF2BC083DE00AFA582 /* MenuBarView.swift */,
 				56CC24F02BC07F2600AFA582 /* ContentView.swift */,
 				56CC24F22BC07F2700AFA582 /* Assets.xcassets */,
 				56CC24F72BC07F2700AFA582 /* harmony.entitlements */,
 				56CC24F42BC07F2700AFA582 /* Preview Content */,
-				56CC24FF2BC083DE00AFA582 /* MenuBarView.swift */,
 			);
 			path = harmony;
 			sourceTree = "<group>";
